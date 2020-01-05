@@ -1,0 +1,25 @@
+## Elasticsearch
+## 9200端口是用来让HTTP REST API来访问ElasticSearch，而9300端口是传输层监听的默认端口
+#elasticsearch.ip=192.168.75.1
+#elasticsearch.port=9300
+#elasticsearch.pool=5
+##注意cluster.name需要与config/elasticsearch.yml中的cluster.name一致
+#elasticsearch.cluster.name=my-application
+#server.port=8081
+
+server:
+  port: 8085
+
+spring:
+  application:
+    name: spring-boot-elasticsearch-actuator   #ServiceId
+
+  # ******************* elasticsearch ******************* #
+  data:
+    elasticsearch:
+      cluster-name:  my-application
+      cluster-nodes: 192.168.75.1:9300
+      properties:  {}
+  elasticsearch:
+    rest:
+      uris: ["http://192.168.75.1:9200"]  # 不配置该配置会报错: Elasticsearch health check failed
