@@ -27,24 +27,24 @@ Spring Data通过注解来声明字段的映射属性，有下面的三个注解
 		analyzer：分词器名称，这里的ik_max_word即使用ik分词器
     
 
-Keyword	Sample
-And	findNameAndPrice
-Or	findByNameOrPrice
-Is	findByName
-Not	findByNameNot
-Between	findByPriceBetween
-LessThanEqual	findByPriceLessThan
-GreaterThanEqual	findByPriceGreaterThan
-Before	findByPriceBefore
-After	findByPriceAfter
-Like	findByNameLike
-StartingWith	findByNameStartingWith
-EndingWith	findByNameEndingWith
-Contains/Containing	findByNameContaining
-In	findByNameIn(Collection<String>names)
-NotIn	findByNameNotIn(Collection<String>names)
-Near	findByStoreNear
-True	findByAvailableTrue
-False	findByAvailableFalse
-OrderBy	findByAvailableTrueOrderByNameDesc
+Keyword	Sample  
+And	findNameAndPrice  
+Or	findByNameOrPrice  
+Is	findByName  
+Not	findByNameNot  
+Between	findByPriceBetween  
+LessThanEqual	findByPriceLessThan  
+GreaterThanEqual	findByPriceGreaterThan  
+Before	findByPriceBefore  
+After	findByPriceAfter  
+Like	findByNameLike  
+StartingWith	findByNameStartingWith  
+EndingWith	findByNameEndingWith  
+Contains/Containing	findByNameContaining  
+In	findByNameIn(Collection<String>names)  
+NotIn	findByNameNotIn(Collection<String>names)  
+Near	findByStoreNear  
+True	findByAvailableTrue  
+False	findByAvailableFalse  
+OrderBy	findByAvailableTrueOrderByNameDesc  
 
